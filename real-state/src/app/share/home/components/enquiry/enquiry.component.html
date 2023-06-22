@@ -1,0 +1,204 @@
+<!-- <p>discover works!</p>
+<div class="nada">
+    <div class="header-image">
+      <img src=".\assets\image\HomePage\main-home-img-3.jpg" alt="Header Image">
+    
+      
+      <form>
+        <h1>Make an enquiry</h1>
+        <p>Save your time and easily rent your property with the lowest commission on the real estate market  </p>
+        <input type="text" placeholder="your name*" />
+        <input type="text" placeholder="your email*" />
+        <input type="text" placeholder="your phone number*" />
+        <textarea name="message" placeholder="your message" class="custom-textarea" id="" cols="30" rows="10"></textarea>
+        <input type="button" value="Make an enquiry" />
+      </form>
+    </div>
+</div> -->
+
+
+<!-- 
+
+
+
+
+
+<div class="header">
+    <img src=".\assets\image\HomePage\main-home-img-3.jpg" alt="Header Image">
+
+    <div class="image-text">
+        <h2>Discover a new way of living</h2>
+        <p>*Feugait scriptorem qui ea, quo admodum eloquentiam eu. Te malis tibique eum. Ne magna assum everti.</p>
+      </div>
+
+
+    <div class="form-container" id="myForm">
+      <form onsubmit="myfun(event)">
+        <h1>Make an enquiry</h1>
+        <p>Save your time and easily rent your property with the lowest commission on the real estate market  </p>
+        <input type="text" id="name" placeholder="your name*" />
+        <input type="text" id="email" placeholder="your email*" />
+        <input type="text" id="phone" placeholder="your phone number*" />
+        <textarea name="message" id="message" placeholder="your message" class="custom-textarea" id="" cols="30" rows="10"></textarea>
+         <button type="submit" id="enquiry"> Make an enquiry </button>  
+        <input type="submit" value="Make an enquiry" onclick="test()"/>
+      </form>
+    </div>
+  </div>
+
+
+
+   <script type="text/javaScript">
+    function test(){
+      event.preventDefault();
+      var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var phone = document.getElementById('phone').value;
+  var message = document.getElementById('messageInput').value;
+  alert(name + email + phone + message);
+  // localStorage.setItem('is_name',name);
+  // localStorage.setItem('is_email',email);
+  // localStorage.setItem('is_phone',phone);
+  // localStorage.setItem('is_message',message);
+    }
+
+
+
+
+
+
+
+
+
+
+
+    // Get the form element
+/*var form = document.getElementById('myForm');
+
+// Add a submit event listener to the form
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form submission
+
+  // Get the form values
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var phone = document.getElementById('phone').value;
+  var message = document.getElementById('messageInput').value;
+
+  // Create an object or array to store the data
+  var data = {
+    name: name,
+    email: email,
+    phone: phone,
+    message: message
+  };
+
+  // Check if data already exists in local storage
+  var existingData = localStorage.getItem('formData');
+  var storedData = existingData ? JSON.parse(existingData) : [];
+
+  // Add the new data to the existing data
+  storedData.push(data);
+
+  // Save the updated data to local storage
+  localStorage.setItem('formData', JSON.stringify(storedData));
+
+  // Optionally, provide feedback to the user
+  alert('Data saved successfully!');
+});
+
+
+
+
+
+
+
+
+
+// Check if data exists in local storage
+var storedData = localStorage.getItem('formData');
+
+if (storedData !== null) {
+  // Data exists in local storage
+  console.log('Data is stored in local storage:', storedData);
+} else {
+  // Data does not exist in local storage
+  console.log('Data is not stored in local storage.');
+}*/
+   </script> -->
+
+   <div class="main-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="header-content">
+            <h2 >
+              Discover a new way of living
+            </h2>
+            <p class="paragraph">Feugait scriptorem qui ea, quo admodum eloquentiam eu.
+               Te malis tibique eum. Ne magna assum everti.
+            </p>
+           
+           
+          </div>
+        </div>
+        
+
+
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="form-content" style="width: 25rem;">
+            
+            <form [formGroup] = "myForm" (ngSubmit)="onSubmit()" >
+              <h1>Make an enquiry</h1>
+              <p>Save your time and easily rent your property with the lowest commission on the real estate market  </p>
+              <input type="text" formControlName="username"  id="name" placeholder="your name*" />
+              <input type="text" formControlName="email" id="email" placeholder="your email*" />
+              <input type="text" formControlName="phone" id="phone" placeholder="your phone number*" />
+              <textarea formControlName="message" id="message" placeholder="your message" class="custom-textarea" id="" cols="30" rows="10"></textarea>
+              
+              <button type="submit" id="enquiry"> Make an enquiry </button>  
+            </form>
+            
+            
+          </div>
+        </div>
+
+
+       
+
+      </div>
+
+    </div>
+  </div>
+
+ <!-- <section class="discover" >
+  <img src=".\assets\image\HomePage\main-home-img-3.jpg" alt="Header Image" id ="img1">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+
+
+      </div>
+      <div class="col-lg-6">
+        <form onsubmit="myfun(event)">
+          <h1>Make an enquiry</h1>
+          <p>Save your time and easily rent your property with the lowest commission on the real estate market  </p>
+          <input type="text" id="name" placeholder="your name*" />
+          <input type="text" id="email" placeholder="your email*" />
+          <input type="text" id="phone" placeholder="your phone number*" />
+          <textarea name="message" id="message" placeholder="your message" class="custom-textarea" id="" cols="30" rows="10"></textarea>
+           <button type="submit" id="enquiry"> Make an enquiry </button>  
+          <input type="submit" value="Make an enquiry" onclick="test()"/>
+        </form>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+ </section> -->
+
