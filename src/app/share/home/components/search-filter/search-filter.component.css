@@ -1,0 +1,41 @@
+.main-wrapper {
+    width: 98%;
+    height: 100%;
+    border-radius: 10px;
+    background-image: url("../../../../../assets/image/HomePage/home-rev-img-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* margin-top: 10rem; */
+    position: relative;
+    margin: auto;
+    margin-bottom: 10rem;
+    padding-bottom: 10rem;
+
+  }
+  .inner-main {
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  .heading-inner {
+    color: #ffffff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    max-width: 100%;
+  }
+  .heading-inner h1 {
+    line-height: 77px;
+    font-family: Poppins,sans-serif;
+    font-weight: 600;
+
+    vertical-align: baseline;
+    font-size: 60px;
+  }
+
